@@ -48,7 +48,7 @@ img {
     .find-programm {
         width: 720px;
         border: 0px solid black;
-        background-image: url(../pictures/find-programm-desktop-temporarily.png);
+        //background-image: url(../pictures/find-programm-desktop-temporarily.png);
         
     }
     .find-programm-logotype {
@@ -60,13 +60,8 @@ img {
     background-image: url(../pictures/logo-desktop.png);
     }
     .find-programm-content {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: flex-start;
         height: 283px;
         width: 414px;
-        border: 1px solid red;
         margin: 0;
         padding: 0;
         margin-left: 190px;
@@ -76,12 +71,14 @@ img {
         line-height: 60px;
         font-weight: 400;
         margin: 0;
+        margin-bottom: 35px;
         padding: 0;
     }
     .find-programm-content-description {
         font-size: 20px;
         line-height: 20px;
         margin: 0;
+        margin-bottom: 35px;
         padding: 0;
     }
     .find-programm-content-button {
@@ -98,7 +95,8 @@ img {
     }
     .header-navigation {
         width: 720px;
-        background-image: url(../pictures/header-navigation-temporarily.png);
+        border: 1px solid black;
+        //background-image: url(../pictures/header-navigation-temporarily.png);
     }
     .header-menu {
         font-weight: 500;
@@ -208,4 +206,123 @@ img {
     padding: 0;
     width: 156px;
     text-align: left;
+}
+//main main main//
+.features {
+    margin: 0;
+    margin-top: 82px;
+    margin-bottom: 75px;
+    margin-left: 110px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+}
+.features-items {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style-type: none;
+    width: 1220px;
+    height: 228px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+}
+.features-items--one,
+.features-items--two,
+.features-items--three,
+.features-items--four {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 24px;
+    width: 200px;
+    
+    border: 1px solid black;
+}
+.features-items--one-picture,
+.features-items--two-picture,
+.features-items--three-picture,
+.features-items--four-picture {
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+}
+.features-items--one-picture {
+background-image: url(../pictures/icon-one-desktop.png);
+}
+.features-items--two-picture {
+background-image: url(../pictures/icon-two-desktop.png);
+}
+.features-items--three-picture {
+background-image: url(../pictures/icon-three-desktop.png);
+}
+.features-items--four-picture {
+background-image: url(../pictures/icon-four-desktop.png);
+}
+
+.features-items-content {
+    margin: 0;
+    padding: 0;
+    padding-top: 36px;
+    width: 200px;
+}
+//example example example example example
+.example {
+    margin: 0;
+    margin-top: 82px;
+    margin-bottom: 75px;
+    margin-left: 110px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+}
+.results {
+    display: flex;
+    height: 462px;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.results__details {
+    width: 610px;
+    height: 100%;
+}
+.results__picture {
+    width: 610px;
+    height: 100%;
+}
+.results__details__wrapper {
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //background-image: url(../pictures/results-details-temporary-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.results__details__description {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+//footer 
+.page-footer {
+    height: 150;
 }
