@@ -1,0 +1,211 @@
+/*Файл variables.less*/
+@bg-blue:#283645;
+@bg-white:#ffffff;
+@bg-white__tint:#f2f2f2;
+@mobile-width:320px;
+@tablet-width:660px;
+@desktop-width:1440px;
+/*Файл scaffolding.less */
+
+body {
+    min-width: @desktop-width;
+    margin: 0;
+    padding: 0;
+    
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-style: normal;
+    
+    background-color:white ;
+    
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.red-star {
+    color:#d22856;
+}
+ main {
+        display: flex;
+        flex-direction: column;
+    }
+/*Файл blocks/page-header.less */
+@media (min-width:@desktop-width) {
+    .page-header {
+        
+    }
+    .programm-navigation {
+        display: flex;
+        width: 1440px;
+        height: 696px;
+        
+        
+    }
+    .find-programm {
+        width: 720px;
+        border: 0px solid black;
+        background-image: url(../pictures/find-programm-desktop-temporarily.png);
+        
+    }
+    .find-programm-logotype {
+        width: 202px;
+        height: 59px;
+        margin-top: 54px;
+        margin-left: 110px;
+        margin-bottom: 113px;
+    background-image: url(../pictures/logo-desktop.png);
+    }
+    .find-programm-content {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: flex-start;
+        height: 283px;
+        width: 414px;
+        border: 1px solid red;
+        margin: 0;
+        padding: 0;
+        margin-left: 190px;
+    }
+    .find-programm-content-header {
+       font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+    .find-programm-content-description {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .find-programm-content-button {
+        margin: 0;
+        padding: 0;
+        height: 52px;
+        width: 245px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        background-color: #68b738;
+    }
+    .header-navigation {
+        width: 720px;
+        background-image: url(../pictures/header-navigation-temporarily.png);
+    }
+    .header-menu {
+        font-weight: 500;
+    list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 476px;
+        
+        padding: 0;
+        padding-top: 65px;
+        margin: 0;
+        margin-left: 133px;
+        margin-right: auto;
+        
+    }
+    .header-menu-item {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        border-bottom: 2px solid black;
+        font-size: 20px;
+    }
+}
+
+//PROGRAMM TO BUY// //PROGRAMM TO BUY// 
+
+.programs {
+    width: 1218px;
+    height: 372px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.programs-one {
+    width: 570px;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    //background-image: url(../pictures/program-one-temporarily-background.png);
+    
+    
+}
+.programs-one-headline {
+    margin: 0;
+    margin-top: 78px;
+    margin-bottom: 74px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+}
+.programs-one-content {
+    font-size: 16px;
+    line-height: 24px;
+    width: 465px;
+    margin: 0;
+    margin-left: 53px;
+    margin-bottom: 33px;
+    padding: 0;
+}
+.programs-one-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    border: 0px;
+    margin: 0;
+    margin-left: 53px;
+    padding: 0;
+    width: 156px;
+    text-align: left;
+}
+.programs-two {
+    width: 570px;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+}
+.programs-two-headline {
+     margin: 0;
+    margin-top: 78px;
+    margin-bottom: 74px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+}
+.programs-two-content {
+    font-size: 16px;
+    line-height: 24px;
+    width: 380px;
+    margin: 0;
+    margin-left: 53px;
+    margin-bottom: 35px;
+    padding: 0;
+}
+.programs-two-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    border: 0px;
+    margin: 0;
+    margin-left: 53px;
+    padding: 0;
+    width: 156px;
+    text-align: left;
+}
