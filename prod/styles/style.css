@@ -28,9 +28,15 @@ main {
     display: flex;
     width: 100%;
     height: 696px;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .find-programm {
     width: 50%;
+    background-image: url(../pictures/find-program-background.png);
+    background-repeat: no-repeat;
+    background-position: right;
   }
   .find-programm-logotype {
     width: 202px;
@@ -78,6 +84,11 @@ main {
     width: 50%;
     display: flex;
     justify-content: center;
+    background-image: url(../pictures/header-navigation-desktop-v2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #64a83b;
+    z-index: 0;
   }
   .header-menu {
     font-weight: 500;
@@ -92,13 +103,16 @@ main {
     margin-right: auto;
   }
   .header-menu-item {
+    color: white;
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
     height: 40px;
-    border-bottom: 2px solid black;
     font-size: 20px;
+  }
+  .header-item {
+    border-bottom: 2px solid white;
   }
 }
 @media (min-width: 1440px) {
@@ -114,7 +128,7 @@ main {
   .programs-one {
     width: 570px;
     background-color: #f2f2f2;
-    border: 1px solid black;
+    background-image: url(../pictures/feature-one.png);
   }
   .programs-one-headline {
     margin: 0;
@@ -149,7 +163,7 @@ main {
   .programs-two {
     width: 570px;
     background-color: #f2f2f2;
-    border: 1px solid black;
+    background-image: url(../pictures/programs-two-background.png);
   }
   .programs-two-headline {
     margin: 0;
@@ -204,6 +218,8 @@ main {
     justify-content: space-between;
     font-size: 16px;
     line-height: 24px;
+    background-image: url(../pictures/features-items-desktop.png);
+    background-size: 100% 100%;
   }
   .features-items--one,
   .features-items--two,
@@ -215,7 +231,6 @@ main {
     font-size: 16px;
     line-height: 24px;
     width: 200px;
-    border: 1px solid black;
   }
   .features-items--one-picture,
   .features-items--two-picture,
@@ -303,21 +318,20 @@ main {
   .map {
     height: 400px;
     width: 99%;
-    border: 1px solid black;
+    background-image: url(../pictures/temporary-map.png);
   }
 }
 @media (min-width: 1440px) {
   .page-footer {
     height: 150px;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #f2f2f2;
   }
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     width: 84.7%;
     height: 34px;
     margin-left: auto;
@@ -356,9 +370,10 @@ main {
     background-image: url(../pictures/fb-icon.png);
   }
   .page-footer__item--three {
-    border: 1px solid black;
-    width: 162px;
+    width: 164px;
     height: 100%;
-    background-image: url(../pictures/fb-icon.png);
+    background-image: url(../pictures/htmlacademy-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
