@@ -128,8 +128,14 @@ main {
     height: 40px;
     font-size: 20px;
   }
-  .header-item {
+  .header-menu-item:active {
     border-bottom: 2px solid white;
+  }
+  .header-menu-item:hover {
+    color: #d0e6c5;
+  }
+  .header-menu-item:visited {
+    color: #ffffff;
   }
 }
 @media (min-width: 1440px) {
