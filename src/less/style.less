@@ -314,15 +314,15 @@ background-image: url(../pictures/icon-four-desktop.png);
     .example-cat-block {
         width: 50%;
         height: 100%;
-        background-image: url(../pictures/head-of-cat.png);
+        background-image: url(../pictures/head-of-cat-v4.png);
+         background-size: contain;
         background-repeat: no-repeat;
-        background-position: bottom;
     }
 .results {
     display: flex;
     justify-content: space-between;
     height: 462px;
-    width: 84.7%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     
@@ -334,11 +334,11 @@ background-image: url(../pictures/icon-four-desktop.png);
 }
     
 .results__details__wrapper {
+    margin-left: 110px;
     height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //background-image: url(../pictures/head-of-cat.png);
     background-repeat: no-repeat;
     background-position: left;
     
@@ -350,22 +350,31 @@ background-image: url(../pictures/icon-four-desktop.png);
     font-size: 16px;
     line-height: 24px;
 }
-.results__picture {
+     .results__picture {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
-    background-image: url(../pictures/big-cat.png);
+    background-image: url(../pictures/big-cat-v3.png);
     background-repeat: no-repeat;
+         background-size: contain;
+         background-color: #eaeaea;
 }
+
     .results__picture__wrapper {
-        margin-top: 360px;
-        width: 93.1%;
+        margin-top: 350px;
+        margin-left: 4.2%;
+        width: 580px;
         display: flex;
-        justify-content: flex-end;
-        padding-right: 7px;
+        justify-content: space-between;
         
+    }
+    .before {
+        border-bottom:1px dotted #bebebe;
+    }
+    .after {
+        border-bottom:1px dotted #bebebe;
     }
     .results__picture__range {
         width: 428px;
@@ -376,6 +385,7 @@ background-image: url(../pictures/icon-four-desktop.png);
     input[type=range] {
   -webkit-appearance: none;
   width: 428px;
+        //width: 75%;
   margin-left: 22px;
         margin-right: 22px;
 }
