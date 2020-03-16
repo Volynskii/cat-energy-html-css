@@ -65,10 +65,11 @@ main {
   .find-programm-content-header {
     font-size: 60px;
     line-height: 60px;
-    font-weight: 400;
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
+    color: #111111;
+    font-weight: 400;
   }
   .find-programm-content-description {
     font-size: 20px;
@@ -161,8 +162,11 @@ main {
     line-height: 36px;
     text-align: center;
     font-weight: 400;
+    color: #111111;
   }
   .programs-one-content {
+    font-family: Arial;
+    color: #444444;
     font-size: 16px;
     line-height: 24px;
     width: 465px;
@@ -198,7 +202,7 @@ main {
     background-repeat: no-repeat;
     border: 0px;
   }
-  cccccc .programs-two {
+  .programs-two {
     width: 570px;
     background-color: #f2f2f2;
     background-image: url(../pictures/programs-two-background.png);
@@ -213,6 +217,7 @@ main {
     font-weight: 400;
   }
   .programs-two-content {
+    font-family: Arial;
     font-size: 16px;
     line-height: 24px;
     width: 380px;
@@ -236,6 +241,18 @@ main {
     background-position: right;
     background-repeat: no-repeat;
   }
+  .programs-two-button:hover {
+    background-image: url(../pictures/arrow-hover.png);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .programs-two-button:active {
+    color: #cccccc;
+    background-image: url(../pictures/arrow-active.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 0px;
+  }
 }
 @media (min-width: 1440px) {
   .features {
@@ -246,8 +263,11 @@ main {
     padding: 0;
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
   }
   .features-items {
+    color: #444444;
+    font-family: Arial;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -293,10 +313,11 @@ main {
     background-image: url(../pictures/icon-four-desktop.png);
   }
   .features-items-content {
+    font-size: 16px;
     margin: 0;
     padding: 0;
     padding-top: 36px;
-    width: 200px;
+    width: 238px;
   }
 }
 @media (min-width: 1440px) {
@@ -340,6 +361,8 @@ main {
     background-color: #f2f2f2;
   }
   .results__details__wrapper {
+    color: #444444;
+    font-family: Arial;
     margin-left: 15.5%;
     height: 310px;
     display: flex;
@@ -349,7 +372,7 @@ main {
     background-position: left;
   }
   .results__details__description {
-    width: 400px;
+    width: 433px;
     margin: 0;
     padding: 0;
     font-size: 16px;
