@@ -30,24 +30,26 @@
     </ul>
     </article>
     </div>
-    
+     </header>
     <article class="programs">
         <section class="programs-one">
+            <div class="programs-one__wrapper">
     <h2 class="programs-one-headline">ПОХУДЕНИЕ</h2> 
     <p class="programs-one-content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
     
     <button class="programs-one-button">КАТАЛОГ SLIM</button>
+                </div>
     </section>
         <section class="programs-two">
+            <div class="programs-two__wrapper">
     <h2 class="programs-two-headline">НАБОР МАССЫ</h2>
     <p class="programs-two-content">Заработать авторитет среди дворовых котов и даже собак?
 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
     
     <button class="programs-two-button">КАТАЛОГ PRO </button>
+                </div>
             </section>
     </article>
-    
-    </header>
     
     <main>
         <h3 class="features">Как это работает</h3>
@@ -81,6 +83,7 @@
         <section class="results__details">
           <div class="results__details__wrapper"> 
         <p class="results__details__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+              <div class="results__numbers-fieldset">
             <section class="results__numbers">
     <fieldset class="results__fieldset">
         <legend class="results__legend">снижение веса</legend>
@@ -91,10 +94,12 @@
         60 ДНЕЙ
     </fieldset>
                 </section>
+                 
             <div class="results__expenses">
-        <p class="results__expenses--text">ЗАТРАТЫ НА ПИТАНИЕ</p> 
+        <p class="results__expenses--text">ЗАТРАТЫ НА ПИТАНИЕ:</p> 
             <p class="results__expenses--text">15 000 РУБ.</p>
                 </div>
+                   </div>
               </div> 
             </section>
           
@@ -105,14 +110,27 @@
             
                 <p class="after">СТАЛО</p>
                 </div>
+            <div class="results__picture__wrapper-two"></div>
             </section>
             </article>
         
-        <article class="map">
-            <div class="map__content">
-            </div>
+        <article id="map">
         </article>
-        
+        <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">
+    </script>
         
     </main>
     <footer class="page-footer">
