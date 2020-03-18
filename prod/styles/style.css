@@ -15,12 +15,131 @@ img {
   max-width: 100%;
   height: auto;
 }
-.red-star {
-  color: #d22856;
-}
 main {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1439px) {
+  .programm-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .find-programm {
+    height: 813px;
+    width: 100%;
+    order: 3;
+    background-image: url(../pictures/find-program-background-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .find-programm-logotype {
+    display: none;
+    width: 202px;
+    height: 59px;
+    margin-top: 54px;
+    margin-left: 15.2%;
+    margin-bottom: 113px;
+    background-image: url(../pictures/logo-desktop.png);
+    background-position: center;
+  }
+  .find-programm-logotype-tablet {
+    width: 174px;
+    height: 58px;
+    background-image: url(../pictures/logotype-tablet.png);
+    background-position: center;
+  }
+  .find-programm-logotype:hover {
+    background-image: url(../pictures/logotype-hover.png);
+    background-position: center;
+  }
+  .find-programm-logotype:active {
+    background-image: url(../pictures/logotype-active.png);
+    background-position: center;
+  }
+  .find-programm-content {
+    height: 283px;
+    width: 414px;
+    margin: 0;
+    padding: 0;
+    margin-left: 15.3%;
+  }
+  .find-programm-content-header {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    color: #111111;
+    font-weight: 400;
+  }
+  .find-programm-content-description {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .find-programm-content-button {
+    margin: 0;
+    padding: 0;
+    height: 52px;
+    width: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #68b738;
+    color: #ffffff;
+  }
+  .find-programm-content-button:hover {
+    background-color: #5eaa2f;
+    color: #cdcdcd;
+  }
+  .find-programm-content-button:active {
+    background-color: #5eaa2f;
+    color: #99c684;
+  }
+  .header-navigation {
+    width: 91.8%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+    height: 106px;
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-menu {
+    font-weight: 500;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 56.8%;
+    padding: 0;
+    margin: 0;
+  }
+  .header-menu-item {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .header-menu-item:active {
+    border-bottom: 2px solid white;
+  }
+  .header-menu-item:hover {
+    color: #d0e6c5;
+  }
+  .header-menu-item:visited {
+    color: #ffffff;
+  }
 }
 /*Файл blocks/page-header.less */
 @media (min-width: 1440px) {
@@ -157,7 +276,7 @@ main {
     height: 372px;
     background-color: #f2f2f2;
     background-image: url(../pictures/program-one-background-tablet.png);
-    background-position: 100% 95%;
+    background-position: 60%;
     background-repeat: no-repeat;
   }
   .programs-one__wrapper {
@@ -182,7 +301,7 @@ main {
     color: #444444;
     font-size: 16px;
     line-height: 24px;
-    width: 370px;
+    width: 53.2%;
     margin: 0;
     margin-left: 7.3%;
     padding: 0;
@@ -194,7 +313,7 @@ main {
     font-weight: 400;
     border: 0px;
     margin: 0;
-    margin-left: 53px;
+    margin-left: 7.3%;
     padding: 0;
     width: 156px;
     text-align: left;
@@ -217,14 +336,16 @@ main {
   .programs-two {
     display: flex;
     justify-content: center;
-    width: 570px;
+    width: 91.9%;
     height: 372px;
     background-color: #f2f2f2;
-    background-image: url(../pictures/programs-two-background.png);
+    background-image: url(../pictures/programs-two-background-tablet.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
   }
   .programs-two__wrapper {
     width: 100%;
-    height: 61%;
+    height: 227px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,11 +361,12 @@ main {
   }
   .programs-two-content {
     font-family: Arial;
+    color: #444444;
     font-size: 16px;
     line-height: 24px;
-    width: 380px;
+    width: 49%;
     margin: 0;
-    margin-left: 53px;
+    margin-left: 7.3%;
     padding: 0;
   }
   .programs-two-button {
@@ -254,7 +376,7 @@ main {
     font-weight: 400;
     border: 0px;
     margin: 0;
-    margin-left: 53px;
+    margin-left: 7.3%;
     padding: 0;
     width: 156px;
     text-align: left;
@@ -475,7 +597,7 @@ main {
     margin-right: auto;
     padding: 0;
     list-style-type: none;
-    width: 81.6%;
+    width: 91.9%;
     height: 548px;
     display: flex;
     flex-direction: row;
@@ -484,7 +606,6 @@ main {
     align-items: center;
     font-size: 16px;
     line-height: 24px;
-    background-size: 100% 100%;
   }
   .features-items--one,
   .features-items--two,
@@ -497,6 +618,16 @@ main {
     line-height: 24px;
     width: 40%;
     height: 228px;
+  }
+  .features-items--one {
+    background-image: url(../pictures/number-one-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .features-items--two {
+    background-image: url(../pictures/number-two-tablet.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
   .features-items--one-picture,
   .features-items--two-picture,
@@ -546,7 +677,7 @@ main {
     width: 50%;
     height: 100%;
     background-image: url(../pictures/head-of-cat-v4.png);
-    background-position: bottom center;
+    background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
   }
