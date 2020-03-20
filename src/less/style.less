@@ -2,14 +2,15 @@
 @bg-blue:#283645;
 @bg-white:#ffffff;
 @bg-white__tint:#f2f2f2;
-@mobile-width:320px;
-@tablet-width:770px;
-@tablet-width-max:@desktop-width - 1;
-@desktop-width:1440px;
+@mobile-width-min:320px;
+@mobile-width-max:769px;
+@tablet-width-min:770px;
+@tablet-width-max:1439px;
+@desktop-width-min:1440px;
 /*Файл scaffolding.less */
 
 body {
-    min-width:@mobile-width;
+    min-width:@mobile-width-min;
     margin: 0;
     padding: 0;
     
@@ -32,7 +33,8 @@ img {
         display: flex;
         flex-direction: column;
     }
-@media (max-width:@tablet-width-max) {
+
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
     .page-header {
        
     }
@@ -164,9 +166,9 @@ border-bottom: 2px solid white;
     .header-menu-item:visited {
         color: #ffffff;
     }
-}
+};
 /*Файл blocks/page-header.less */
-@media (min-width:@desktop-width) {
+@media (min-width:@desktop-width-min) {
     .page-header {
         
     }
@@ -299,7 +301,7 @@ border-bottom: 2px solid white;
     }
 };
 //PROGRAMM TO BUY// //PROGRAMM TO BUY// 
-@media (max-width:@tablet-width-max) {
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
     .programs {
     width: 100%;
     height: 774px;
@@ -443,7 +445,7 @@ border-bottom: 2px solid white;
     }
 }; 
 
-@media (min-width:@desktop-width) {
+@media (min-width:@desktop-width-min) {
 .programs {
     width: 84.5%;
     height: 372px;
@@ -567,7 +569,7 @@ border-bottom: 2px solid white;
 
 
 //main main main//
-@media (min-width:@desktop-width) {
+@media (min-width:@desktop-width-min) {
 .features {
     margin: 0;
     margin-top: 82px;
@@ -640,7 +642,7 @@ background-image: url(../pictures/icon-four-desktop.png);
     width: 238px;
 }
 };
-@media (max-width:@tablet-width-max) {
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
   .features {
     margin: 0;
     margin-top: 82px;
@@ -738,7 +740,7 @@ background-image: url(../pictures/icon-four-desktop.png);
 }  
 };
 //example example example example example
-@media (min-width:@desktop-width) {
+@media (min-width:@desktop-width-min) {
 .example {
     display: flex;
     justify-content: flex-start;
@@ -876,7 +878,7 @@ background-image: url(../pictures/icon-four-desktop.png);
 
 };//end of results block
 
-@media (max-width:@tablet-width-max) {
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
 .example {
     border-top: 1px solid #e6e6e6;
     display: flex;
@@ -1024,12 +1026,12 @@ background-image: url(../pictures/icon-four-desktop.png);
     }
 
 };//end of results block
-@media (min-width:@desktop-width) {
+@media (min-width:@desktop-width-min) {
     .partnership {
         display: none;
     }
-}
-@media (max-width:@tablet-width-max) {
+};
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
     .partnership {
         font-size: 16px;
         line-height: 20px;
@@ -1064,27 +1066,27 @@ background-image: url(../pictures/icon-four-desktop.png);
         line-height: 20px;
         color:#444444;
     }
-}
-@media (min-width:@desktop-width) {
+};
+@media (min-width:@desktop-width-min) {
     #map {
         height: 396px;
         width: 100%;
         background-image: url(../pictures/temporary-map.png);  
-    };
+    }
 
 
 
 };//end
 //footer
-@media (max-width:@tablet-width-max) {
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
     #map {
         height: 396px;
         width: 100%;
         background-image: url(../pictures/temporary-map.png);  
-    };
+    }
     
-}
-@media (min-width:@desktop-width) {
+};
+@media (min-width:@desktop-width-min) {
 .page-footer {
     height: 150px;
     display: flex;
@@ -1149,9 +1151,7 @@ background-image: url(../pictures/icon-four-desktop.png);
 
 };
 
-
-
-@media (max-width:@tablet-width-max) {
+@media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
 .page-footer {
     height: 150px;
     border: 10 px solid red;
@@ -1213,6 +1213,5 @@ background-image: url(../pictures/icon-four-desktop.png);
         background-position: center;
         
     }
-
 
 };
