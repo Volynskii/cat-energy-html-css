@@ -1,13 +1,10 @@
 /*Файл variables.less*/
-@bg-blue:#283645;
-@bg-white:#ffffff;
-@bg-white__tint:#f2f2f2;
 @mobile-width-min:320px;
 @mobile-width-max:769px;
 @tablet-width-min:770px;
 @tablet-width-max:1439px;
 @desktop-width-min:1440px;
-/*Файл scaffolding.less */
+/*file scaffolding.less */
 
 body {
     min-width:@mobile-width-min;
@@ -19,11 +16,10 @@ body {
     font-family: 'Oswald', sans-serif;
     color: black;
     font-style: normal;
-    
     background-color:white ;
     
-    
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -32,7 +28,19 @@ img {
  main {
         display: flex;
         flex-direction: column;
+     
     }
+.header-menu-item,
+.find-programm-content-button,
+.programs-one-button, 
+.programs-two-button,
+.page-footer__item--one,
+.page-footer__item--two, 
+.page-footer__item--three,
+.find-programm-logotype,
+.find-programm-logotype-tablet {
+    cursor: pointer;
+}
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     .page-header {
        
@@ -67,8 +75,7 @@ img {
         display: none;
     }
     .find-programm-logotype:hover {
-      background-image: url(../pictures/logotype-hover.png);
-        background-position: center;
+        background: url(../pictures/logotype-hover.png) center;
     }
     .find-programm-logotype:active {
        background-image: url(../pictures/logotype-active.png);
@@ -97,7 +104,6 @@ img {
         
         padding: 0;
         color: #111111;
-        font-weight: 400;
     }
     .find-programm-content-description {
         font-size: 14px;
@@ -136,7 +142,6 @@ img {
         margin-left: auto;
         margin-right: auto;
         order: 1;
-        //border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -186,10 +191,8 @@ border-bottom: 2px solid white;
         height: 813px;
         width: 100%;
         order: 3;
-        background-image: url(../pictures/find-program-background-tablet.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        
+        background: url(../pictures/find-program-background-tablet.png) no-repeat center;
+
     }
     .find-programm-logotype {
         display: none;
@@ -200,6 +203,7 @@ border-bottom: 2px solid white;
         margin-bottom: 113px;
     background-image: url(../pictures/logo-desktop.png);
         background-position: center;
+transition: 1s ease-in-out;
     }
     .find-programm-logotype-tablet {
         width: 174px;
@@ -230,7 +234,6 @@ border-bottom: 2px solid white;
         margin-bottom: 35px;
         padding: 0;
         color: #111111;
-        font-weight: 400;
     }
     .find-programm-content-description {
         font-size: 20px;
@@ -240,6 +243,7 @@ border-bottom: 2px solid white;
         padding: 0;
     }
     .find-programm-content-button {
+transition: 1s ease-in-out;
         margin: 0;
         padding: 0;
         height: 52px;
@@ -269,7 +273,6 @@ border-bottom: 2px solid white;
         margin-bottom: 38px;
         height: 106px;
         order: 1;
-        //border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -294,6 +297,7 @@ border-bottom: 2px solid white;
         height: 40px;
         font-size: 18px;
         line-height: 25px;
+transition: 1s ease-in-out;
     }
     .header-menu-item:active {
 border-bottom: 2px solid white;
@@ -306,7 +310,7 @@ border-bottom: 2px solid white;
         color: #ffffff;
     }
 };
-/*Файл blocks/page-header.less */
+/*file blocks/page-header.less */
 @media (min-width:@desktop-width-min) {
     .page-header {
         
@@ -339,6 +343,7 @@ border-bottom: 2px solid white;
         margin-bottom: 113px;
     background-image: url(../pictures/logo-desktop.png);
         background-position: center;
+transition: 1s ease-in-out;
     }
     .find-programm-logotype:hover {
       background-image: url(../pictures/logotype-hover.png);
@@ -376,6 +381,7 @@ border-bottom: 2px solid white;
         padding: 0;
     }
     .find-programm-content-button {
+transition: 1s ease-in-out;
         margin: 0;
         padding: 0;
         height: 52px;
@@ -399,10 +405,10 @@ border-bottom: 2px solid white;
     
     .header-navigation {
         width: 50%;
-        //border: 1px solid black;
         display: flex;
         justify-content: center;
         background-image: url(../pictures/header-navigation-desktop-v2.png);
+        background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
         background-color: #64a83b;
@@ -413,7 +419,7 @@ border-bottom: 2px solid white;
     list-style-type: none;
         display: flex;
         justify-content: space-between;
-        width: 66.25%;
+        width: 68%;
         
         padding: 0;
         padding-top: 65px;
@@ -430,6 +436,7 @@ border-bottom: 2px solid white;
         margin: 0;
         height: 40px;
         font-size: 20px;
+transition: 1s ease-in-out;
     }
     .header-menu-item:active {
 border-bottom: 2px solid white;
@@ -442,7 +449,7 @@ border-bottom: 2px solid white;
         color: #ffffff;
     }
 };
-/*Файл blocks/programs.less */
+/*file blocks/programs.less */
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     .programs {
     width: 100%;
@@ -460,7 +467,6 @@ border-bottom: 2px solid white;
     width: 91.9%;
         height: 266px;
     background-color: #f2f2f2;
-    //background-image: url(../pictures/program-one-background-tablet.png);
         background-position: 60%;
         background-repeat: no-repeat;
 }
@@ -492,13 +498,12 @@ border-bottom: 2px solid white;
     padding: 0;
 }
 .programs-one-button {
-    font-family: 'Oswald', sans-serif;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
-    margin-left: 15%;
+    margin-left:15%;
     padding: 0;
     width: 156px;
     height: 57px;
@@ -507,6 +512,9 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
+    
 }
     
     .programs-one-button:hover {
@@ -519,7 +527,7 @@ border-bottom: 2px solid white;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
     }
     
 .programs-two {
@@ -528,7 +536,6 @@ border-bottom: 2px solid white;
     width: 91.9%;
         height: 266px;
     background-color: #f2f2f2;
-    //background-image: url(../pictures/program-one-background-tablet.png);
         background-position: 60%;
         background-repeat: no-repeat;
     
@@ -566,7 +573,7 @@ border-bottom: 2px solid white;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
     margin-left: 15%;
     padding: 0;
@@ -577,6 +584,8 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
 }
     .programs-two-button:hover {
         background-image: url(../pictures/arrow-hover.png);
@@ -588,7 +597,7 @@ border-bottom: 2px solid white;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
     }
 }
 @media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
@@ -639,12 +648,13 @@ border-bottom: 2px solid white;
     margin-left: 7.3%;
     padding: 0;
 }
+
 .programs-one-button {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald',sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
     margin-left: 7.3%;
     padding: 0;
@@ -653,6 +663,8 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
 }
     
     .programs-one-button:hover {
@@ -665,7 +677,7 @@ border-bottom: 2px solid white;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
     }
     
 .programs-two {
@@ -697,7 +709,7 @@ border-bottom: 2px solid white;
     font-weight: 400;
 }
 .programs-two-content {
-    font-family: Arial;
+    font-family: Arial,sans-serif;
     color: #444444;
     font-size: 16px;
     line-height: 24px;
@@ -711,7 +723,7 @@ border-bottom: 2px solid white;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
     margin-left: 7.3%;
     padding: 0;
@@ -720,6 +732,8 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
 }
     .programs-two-button:hover {
         background-image: url(../pictures/arrow-hover.png);
@@ -731,10 +745,10 @@ border-bottom: 2px solid white;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
     }
 }; 
-/*Файл blocks/programs.less */
+/*file blocks/programs.less */
 @media (min-width:@desktop-width-min) {
 .programs {
     width: 84.5%;
@@ -743,12 +757,13 @@ border-bottom: 2px solid white;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .programs-one {
     width: 570px;
     background-color: #f2f2f2;
     background-image: url(../pictures/feature-one.png);
+    margin-right: 6.57%;
 
     
     
@@ -779,7 +794,7 @@ border-bottom: 2px solid white;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
     margin-left: 53px;
     padding: 0;
@@ -788,19 +803,25 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
+    
+    
 }
     
     .programs-one-button:hover {
         background-image: url(../pictures/arrow-hover.png);
     background-position: right;
     background-repeat: no-repeat;
+       
     }
     .programs-one-button:active {
         color: #cccccc;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
+       
     }
 .programs-two {
     width: 570px;
@@ -833,7 +854,7 @@ border-bottom: 2px solid white;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    border: 0px;
+    border: 0;
     margin: 0;
     margin-left: 53px;
     padding: 0;
@@ -842,6 +863,9 @@ border-bottom: 2px solid white;
     background-image: url(../pictures/arrow-sign.png);
     background-position: right;
     background-repeat: no-repeat;
+    outline:0;
+transition: 1s ease-in-out;
+    
 }
     .programs-two-button:hover {
         background-image: url(../pictures/arrow-hover.png);
@@ -853,16 +877,16 @@ border-bottom: 2px solid white;
         background-image: url(../pictures/arrow-active.png);
     background-position: right;
     background-repeat: no-repeat;
-        border: 0px;
+        border: 0;
     }
 };
 
-/*Файл blocks/features.less */
+/*file blocks/features.less */
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     .features {
     margin: 0;
     margin-top: 34px;
-    margin-left: 3.8%;
+    text-align: center;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -870,15 +894,13 @@ border-bottom: 2px solid white;
 }
 .features-items {
     color: #444444;
-    font-family: Arial;
+    font-family: Arial,sans-serif;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 42px;
     margin-bottom: 42px;
     padding: 0;
     list-style-type: none;
-    width: 91.9%;
+    width: 100%;
     height: 384px;
     display: flex;
     flex-direction: column;
@@ -894,7 +916,7 @@ border-bottom: 2px solid white;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    justify-content: space-between;
+    justify-content: center;
         align-items: center;
     width: 100%;
     height: 60px;  
@@ -926,7 +948,7 @@ background-image: url(../pictures/icon-four-mobile.png);
     margin: 0;
     margin-left: 7%;
     padding: 0;
-    width: 90%;
+    width: 176px;
 }  
 };
 @media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
@@ -942,7 +964,7 @@ background-image: url(../pictures/icon-four-mobile.png);
 }
 .features-items {
     color: #444444;
-    font-family: Arial;
+    font-family: Arial,sans-serif;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -957,7 +979,6 @@ background-image: url(../pictures/icon-four-mobile.png);
     align-items: center;
     font-size: 16px;
     line-height: 24px;
-    //background-image: url(../pictures/features-items-tablet.png);
     
     
 }
@@ -1026,13 +1047,15 @@ background-image: url(../pictures/icon-four-desktop.png);
     width: 238px;
 }  
 };
-/*Файл blocks/features.less */
+/*file blocks/features.less */
 @media (min-width:@desktop-width-min) {
 .features {
+    width: 1218px;
     margin: 0;
     margin-top: 82px;
     margin-bottom: 75px;
-    margin-left: 7.6%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     font-size: 60px;
     line-height: 60px;
@@ -1040,13 +1063,13 @@ background-image: url(../pictures/icon-four-desktop.png);
 }
 .features-items {
     color: #444444;
-    font-family: Arial;
+    font-family: Arial,sans-serif;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
     list-style-type: none;
-    width: 84.7%;
+    width: 1218px;
     height: 228px;
     display: flex;
     justify-content: space-between;
@@ -1104,22 +1127,21 @@ background-image: url(../pictures/icon-four-desktop.png);
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     .example {
     border-top: 1px solid #e6e6e6;
+        background-color:#f2f2f2;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 36px;
+    height: 104px;
     width: 100%;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-        margin-bottom: 41px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
 }
     .example-headline {
-        width: 50%;
-        margin-left: 3.8%;
+        
     }
     .example-cat-block {
         display: none;
@@ -1132,14 +1154,15 @@ background-image: url(../pictures/icon-four-desktop.png);
     margin-left: auto;
     margin-right: auto;
     
+    
 }
 .results__details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
     height: 240px;
-    background-color: #ffffff;
+     background-color:#f2f2f2;
     background-repeat: no-repeat;
     background-position: bottom;
     
@@ -1147,37 +1170,43 @@ background-image: url(../pictures/icon-four-desktop.png);
     
 .results__details__wrapper {
     color:#444444;
-    font-family: Arial;
-    margin-left: 3.8%;
-    height: 195px;
+    font-family: Arial,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: left;
     
 }
 .results__details__description {
-    width: 89%;
+    width: 275px;
     margin: 0;
-    margin-left:0;
-    margin-right: 5%;
+    margin-bottom: 29px;
     padding: 0;
     font-size: 14px;
     line-height: 18px;
 }
     .results__numbers-fieldset {
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        
     }
     span {
+        font-family: 'Oswald',sans-serif;
         color:#111111;
         font-weight: 700;
     }
     .results__numbers {
-        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
         display: flex;
         justify-content: space-between;
     }
@@ -1190,13 +1219,15 @@ background-image: url(../pictures/icon-four-desktop.png);
         
     }
     .results__legend {
-        width: 146px;
+        font-size: 12px;
+        line-height: 12px;
+        width: 54px;
        margin: 0;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
         
     }
     .results__expenses {
@@ -1292,7 +1323,7 @@ background-image: url(../pictures/icon-four-desktop.png);
     
 .results__details__wrapper {
     color:#444444;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin-left: 3.8%;
     height: 195px;
     display: flex;
@@ -1316,6 +1347,7 @@ background-image: url(../pictures/icon-four-desktop.png);
         justify-content: space-between;
     }
     span {
+        font-family: 'Oswald',sans-serif;
         color:#111111;
         font-weight: 700;
     }
@@ -1343,8 +1375,10 @@ background-image: url(../pictures/icon-four-desktop.png);
         
     }
     .results__expenses {
+        font-family: 'Oswald',sans-serif;
+        font-size: 20px;
+        line-height: 20px;
         color:#111111;
-        font-weight: 700;
         width: 326px;
         display: flex;
         flex-direction: column;
@@ -1358,7 +1392,7 @@ background-image: url(../pictures/icon-four-desktop.png);
     }
      .results__picture {
     width: 100%;
-    height: 714px;;
+    height: 450px;
     display: flex;
     
          background-size: contain;
@@ -1370,8 +1404,9 @@ background-image: url(../pictures/icon-four-desktop.png);
         width: 50%;
         height: 100%;
         background-image: url(../pictures/cat-left-part-tablet.png);
+        background-size: contain;
          background-repeat: no-repeat;
-        background-position: top right;
+        background-position: center right;
         background-color: #f2f2f2;
         
     }
@@ -1379,8 +1414,9 @@ background-image: url(../pictures/icon-four-desktop.png);
         width: 50%;
         height: 100%;
         background-image: url(../pictures/cat-right-part-tablet.png);
+        background-size: contain;
          background-repeat: no-repeat;
-        background-position: top left;
+        background-position: center left;
         background-color: #eaeaea;
         
     }
@@ -1394,14 +1430,14 @@ background-image: url(../pictures/icon-four-desktop.png);
     }
 
 };
-/*Файл blocks/example.less */
+/*file blocks/example.less */
 @media (min-width:@desktop-width-min) {
 .example {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 217px;
-    width: 84.7%;
+    width: 1218px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1422,32 +1458,33 @@ background-image: url(../pictures/icon-four-desktop.png);
     }
 .results {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 462px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
+    background-color: #f2f2f2;
 }
 .results__details {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 432px;
     height: 100%;
     background-color: #f2f2f2;
+    margin-right: 180px;
 }
     
 .results__details__wrapper {
     color:#444444;
-    font-family: Arial;
-    margin-left: 15.5%;
+    font-family: Arial, sans-serif;
     height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-repeat: no-repeat;
     background-position: left;
+    
     
 }
 .results__details__description {
@@ -1479,8 +1516,9 @@ background-image: url(../pictures/icon-four-desktop.png);
         justify-content: space-between;
     }
     span {
+        font-family: 'Oswald',sans-serif;
         color:#111111;
-        font-weight: 700;
+        font-size: 30px;
     }
     .results__legend {
        margin: 0;
@@ -1492,7 +1530,8 @@ background-image: url(../pictures/icon-four-desktop.png);
         
     }
     .results__expenses {
-        font-size: 14px;
+        font-family: 'Oswald',sans-serif;
+        font-size: 20px;
         color: #111111;
         width: 350px;
         display: flex;
@@ -1509,16 +1548,16 @@ background-image: url(../pictures/icon-four-desktop.png);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url(../pictures/big-cat-v3.png);
-         background-position: left top;
+    background-image: url(../pictures/big-cat-v6.png);
     background-repeat: no-repeat;
-         background-size: contain;
+         background-position: left top;
          background-color: #eaeaea;
 }
 
     .results__picture__wrapper {
-        margin-top: 350px;
+        margin-top: 353px;
         margin-left: 4.2%;
+        margin-right: 12%;
         width: 580px;
         display: flex;
         justify-content: space-between;
@@ -1538,13 +1577,13 @@ background-image: url(../pictures/icon-four-desktop.png);
     .partnership {
         font-size: 16px;
         line-height: 20px;
-        height: 200px;
+        height: 114px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .partnership__wrapper {
-        width: 81.1%;
+        width: 87.5%;
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -1559,6 +1598,10 @@ background-image: url(../pictures/icon-four-desktop.png);
         line-height: 20px;
     }
     .partnership__address {
+        font-family: 'Arial',sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 140px;
         height: 60px;
         margin: 0;
@@ -1570,6 +1613,13 @@ background-image: url(../pictures/icon-four-desktop.png);
         line-height: 20px;
         color:#444444;
     }
+    .partnership__address__item-one {
+        width: 154px; 
+        text-align: left;
+    };
+    .partnership__address__item-two {
+        
+    };
 };
 @media (min-width: @tablet-width-min) and  (max-width: @tablet-width-max) {
     .partnership {
@@ -1595,6 +1645,7 @@ background-image: url(../pictures/icon-four-desktop.png);
         line-height: 25px;
     }
     .partnership__address {
+        font-family: Arial,sans-serif;
         list-style-type: none;
         display: flex;
         flex-direction: column;
@@ -1606,14 +1657,68 @@ background-image: url(../pictures/icon-four-desktop.png);
         line-height: 20px;
         color:#444444;
     }
+    .partnership__address__item-one {
+       width: 160px; 
+        text-align: right;
+    }
+    .partnership__address__item-two {
+    }
 };
 /*Файл blocks/partnership.less */
 @media (min-width:@desktop-width-min) {
     .partnership {
-        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 2380px;
+        font-size: 16px;
+        line-height: 20px;
+        width: 570px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         background-color: #ffffff;
+        margin-left: 7.63%;
+    }
+    .partnership__wrapper {
+        width: 81.1%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .partnership__textcontent {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .partnership__address {
+        font-family: Arial, sans-serif;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color:#444444;
+    }
+    .partnership__address__item-one {
+       width: 160px; 
+        text-align: left;
+    }
+    .partnership__address__item-two {
+         width: 154px;  
     }
 };
-/*Файл blocks/map.less */
+/*file blocks/map.less */
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     #map {
         height: 576px;
@@ -1636,7 +1741,7 @@ background-image: url(../pictures/icon-four-desktop.png);
         background-image: url(../pictures/temporary-map.png);  
     }
 };
-/*Файл blocks/footer.less */
+/*file blocks/footer.less */
 @media (min-width: @mobile-width-min) and  (max-width: @mobile-width-max) {
     .page-footer {
     height: 240px;
@@ -1650,7 +1755,7 @@ background-image: url(../pictures/icon-four-desktop.png);
     .page-footer__wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
         height: 100%;
@@ -1658,8 +1763,9 @@ background-image: url(../pictures/icon-four-desktop.png);
         margin-right: auto;
     }
     .page-footer__item--one {
-        width: 128px;
-        height: 100%;
+        border-bottom: 1px solid #d9d9d9;
+        width: 87.5%;
+        height: 94px;
         background-image: url(../pictures/footer-item--one.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -1668,10 +1774,9 @@ background-image: url(../pictures/icon-four-desktop.png);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 124px;
+        width: 127px;
         list-style-type: none;
-        height: 100%;
-        width: 225px;
+        height: 33%;
         margin: 0;
         padding: 0;
     }
@@ -1698,9 +1803,13 @@ background-image: url(../pictures/icon-four-desktop.png);
         justify-content: space-between;
         align-items: center;
         width: 87.5%;
-        height: 100%;
+        height: 33%;
+        border-top: 1px solid #d9d9d9;
         }
     .page-footer--text {
+        color:#444444;
+        font-size: 16px;
+        font-family: 'Arial',sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -1777,7 +1886,7 @@ background-image: url(../pictures/icon-four-desktop.png);
         display: none;
     }
 };
-/*Файл blocks/footer.less */
+/*file blocks/footer.less */
 @media (min-width:@desktop-width-min) {
 .page-footer {
     height: 150px;
