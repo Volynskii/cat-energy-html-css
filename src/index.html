@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>PINK</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -32,7 +31,6 @@
         </article>
     </div>
 </header>
-<script src="change-tagname.js"></script>
 <article class="programs">
     <section class="programs-one">
         <div class="programs-one__wrapper">
@@ -130,11 +128,20 @@
 
     <article id="map">
     </article>
-     <script src="google-map.js"></script>
-        <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">
+    <script>
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: 59.938040, lng: 30.323596};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 17, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+        };
     </script>
-
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">
+    </script>
 </main>
 <footer class="page-footer">
     <section class="page-footer__wrapper">
@@ -152,7 +159,6 @@
         </div>
     </section>
 </footer>
-    
 </body>
 
 
