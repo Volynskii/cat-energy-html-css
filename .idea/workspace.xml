@@ -1,15 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd0b746b-24a7-40c6-a3f6-0ee0f3139949" name="Default Changelist" comment="" />
+    <list default="true" id="dd0b746b-24a7-40c6-a3f6-0ee0f3139949" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/cat-energy-index-mobile-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-1-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-2-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-3-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-4-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-5-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-6-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/catalog-7-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/fb-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/fb-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/fb-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/footer-item--one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/gift-picture-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/htmlacademy-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/insta-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/insta-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/insta-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/logo-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/logotype-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/logotype-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/logotype-tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/suppliment-mobile-picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/suppliment-tablet-picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/temporary-map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/vk-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/vk-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/catalog/vk-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/map-pin-cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-map/google-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/google-map/mapStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/catalog-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/cat-energy-index-mobile-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/close-menu-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/fb-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/fb-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/fb-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/footer-item--one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/htmlacademy-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/insta-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/insta-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/insta-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logo-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logo-mobile-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logo-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logotype-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logotype-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/logotype-tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/mail-focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/menu-close-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/mobile-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/radiobutton-active-desktopv2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/radiobutton-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/tick-copyv2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/vk-icon-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/vk-icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pictures/form/vk-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ovbrxDzxgA9ZJlJPh7SnLswvdr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -29,7 +107,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.start (1)">
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../../AW WEBSITE/aw/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../../mishka/mishka/react-create-app jest enzyme/enzyme-jest/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -52,7 +150,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (2)" />
         <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
@@ -71,11 +171,32 @@
       <workItem from="1614170266428" duration="3000" />
       <workItem from="1614170283074" duration="1183000" />
       <workItem from="1614171506360" duration="1997000" />
-      <workItem from="1614230672188" duration="4770000" />
+      <workItem from="1614230672188" duration="7011000" />
+      <workItem from="1614250024311" duration="7893000" />
+      <workItem from="1614325011742" duration="636000" />
+      <workItem from="1614408155030" duration="76000" />
+      <workItem from="1614408241279" duration="20637000" />
+      <workItem from="1614496801405" duration="19149000" />
+      <workItem from="1614578124160" duration="24028000" />
+      <workItem from="1614839567577" duration="1293000" />
+      <workItem from="1614841128960" duration="851000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

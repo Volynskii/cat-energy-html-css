@@ -1,17 +1,21 @@
 import './catalog-page.scss'
+import arrayCatalog from "../mocks/catalog-item";
+import MyMap from "./google-map/google-map";
 
 export const Catalog = () => {
+
+
     return (
         <>
             <header className="page-header">
 
-                <article className="header-navigation">
-                    <div className="find-programm-logotype-tablet"/>
-                    <ul className="header-menu">
-                        <li className="header-menu-item">ГЛАВНАЯ
+                <article className="header-navigation-catalog">
+                    <div className="find-programm-logotype-tablet-catalog"/>
+                    <ul className="header-menu-catalog">
+                        <li className="header-menu-item a-color"><a href={`/`}>ГЛАВНАЯ</a>
                         </li>
-                        <li className="header-menu-item">КАТАЛОГ ПРОДУКЦИИ</li>
-                        <li className="header-menu-item"> ПОДБОР ПРОГРАММЫ</li>
+                        <li className="header-menu-item a-color"><a className="header-menu-item-active" href={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</a></li>
+                        <li className="header-menu-item a-color"><a href={`/form`}>ПОДБОР ПРОГРАММЫ</a></li>
                     </ul>
                 </article>
             </header>
@@ -21,28 +25,29 @@ export const Catalog = () => {
                     <h1 className="catalog__headline">Каталог продукции</h1>
 
                     <ul className="catalog__list">
-                        <template class="template-item">
-                            <li className="catalog__list__item">
+                        {arrayCatalog.map((catalogItem,index) => (
+
+                            <li key={index} className="catalog__list__item">
                                 <div className="catalog__list__item__wrapper">
                                     <section className="container-first">
                                         <section className="image-block">
                                             <div className="catalog__list__item__image">
-                                                <img className="catalog__list__item__image__picture"
-                                                     src="pictures/catalog-2-desktop.png"/>
+                                                <img alt={index} className="catalog__list__item__image__picture"
+                                                     src={catalogItem.image}/>
                                             </div>
                                         </section>
 
 
                                         <section className="information-block">
-                                            <h2 className="catalog__list__item__headline">Cat Energy PRO <br/>
-                                                500 г</h2>
+                                            <h2 className="catalog__list__item__headline">{catalogItem.headline}<br/>
+                                                {catalogItem.size}</h2>
                                             <ul className="catalog__list__item__description">
                                                 <li className="catalog__list__item__description--option"><p>Объем</p> <p
-                                                    className="size">500г</p></li>
+                                                    className="size">{catalogItem.size}</p></li>
                                                 <li className="catalog__list__item__description--option"><p>Вкус</p>  <p
-                                                    className="taste">Курица</p></li>
+                                                    className="taste">{catalogItem.taste}</p></li>
                                                 <li className="catalog__list__item__description--option"><p>Цена</p> <p
-                                                    className="price">700 Р.</p></li>
+                                                    className="price">{catalogItem.prices}</p></li>
                                             </ul>
                                         </section>
 
@@ -56,12 +61,14 @@ export const Catalog = () => {
 
                                 </div>
                             </li>
-                        </template>
+                        ))}
+
+
 
                         <li className="catalog__list__item item-last">
                             <div className="plus-wrapper">
                                 <div className="catalog__list__item__image plus-image">
-                                    <img className="catalog__list__item__image__picture plus" src="pictures/plus.png"/>
+                                    <img alt={'plus'} className="catalog__list__item__image__picture plus" src="./images/catalog/plus.png"/>
                                 </div>
                                 <h2 className="plus-headline">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</h2>
                                 <p className="catalog__list__item__text">На самом деле вкусов гораздо больше!
@@ -74,13 +81,14 @@ export const Catalog = () => {
                         </li>
 
                     </ul>
+
                 </article>
 
 
-                <article className="additional-suppliment">
+                <article className="additional-suppliment-catalog">
                     <fieldset className="additional-suppliment__fieldset">
-                        <legend className="additional-suppliment__legend">Дополнительные товары</legend>
-                        <div></div>
+                        <legend className="additional-suppliment__legend-catalog">Дополнительные товары</legend>
+                        <div/>
                         <section className="additional-suppliment__wrapper">
 
                             <div className="additional-suppliment-left">
@@ -130,7 +138,7 @@ export const Catalog = () => {
                     </fieldset>
                 </article>
 
-                <article className="partnership">
+                <article className="partnership-catalog">
                     <div className="partnership__wrapper">
                         <div className="partnership__textcontent">ПРИГЛАШАЕМ <br/>
                             К СОТРУДНИЧЕСТВУ <br/>
@@ -144,28 +152,25 @@ export const Catalog = () => {
 
 
                 <article id="map">
+                    <MyMap />
                 </article>
 
-                {/*<script src="google-map.js"></script>*/}
-                {/*<script async defer*/}
-                {/*        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">*/}
-                {/*</script>*/}
 
             </main>
             <footer className="page-footer">
                 <section className="page-footer__wrapper">
                     <div className="page-footer__item--one"/>
 
-                    <ul className="page-footer__item--two">
-                        <li className="page-footer__item--two--first"/>
-                        <li className="page-footer__item--two--second"/>
-                        <li className="page-footer__item--two--third"/>
-                    </ul>
+                    <div className="page-footer__item--two">
+                        <a  target="_blank" href="https://vk.com/im" className="page-footer__item--two--first"/>
+                        <a  target="_blank"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
+                        <a  target="_blank" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
+                    </div>
 
-                    <div className="page-footer__item--three">
+                    <a rel="noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">
                         <p className="page-footer--text">HTML Academy</p>
                         <div className="page-footer__item--three--sign"/>
-                    </div>
+                    </a>
                 </section>
             </footer>
         </>

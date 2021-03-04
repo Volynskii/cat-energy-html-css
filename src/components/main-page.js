@@ -1,4 +1,5 @@
 import './main-page.scss'
+import MyMap from "./google-map/google-map";
 
 const Main = () => {
     return (
@@ -12,7 +13,7 @@ const Main = () => {
                             <h1 className="find-programm-content-header">Функциональное питание для котов</h1>
                             <p className="find-programm-content-description">ЗАНЯЛСЯ СОБОЙ?ЗАЙМИСЬ КОТОМ!</p>
 
-                            <div className="find-programm-content-button">ПОДОБРАТЬ ПРОГРАММУ</div>
+                            <a href={`/form`} className="find-programm-content-button">ПОДОБРАТЬ ПРОГРАММУ</a>
 
                         </div>
                     </article>
@@ -20,10 +21,10 @@ const Main = () => {
                     <article className="header-navigation">
                         <div className="find-programm-logotype-tablet"/>
                         <ul className="header-menu">
-                            <li className="header-menu-item">ГЛАВНАЯ
+                            <li className="header-menu-item"><a className="header-menu-item-active-main" href={`/`}>ГЛАВНАЯ</a>
                             </li>
-                            <li className="header-menu-item">КАТАЛОГ ПРОДУКЦИИ</li>
-                            <li className="header-menu-item"> ПОДБОР ПРОГРАММЫ</li>
+                            <li className="header-menu-item"><a href={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</a></li>
+                            <li className="header-menu-item"><a href={`/form`}>ПОДБОР ПРОГРАММЫ</a></li>
                         </ul>
                     </article>
                 </div>
@@ -122,8 +123,8 @@ const Main = () => {
                         <div className="results__picture__wrapper-two"/>
                     </section>
                 </article>
-                <article className="partnership">
-                    <div className="partnership__wrapper">
+                <article className="partnership-main">
+                    <div className="partnership__wrapper-main">
                         <div className="partnership__textcontent">ПРИГЛАШАЕМ <br/>
                             К СОТРУДНИЧЕСТВУ <br/>
                             ДИЛЕРОВ!</div>
@@ -135,6 +136,7 @@ const Main = () => {
                 </article>
 
                 <article id="map">
+                    <MyMap />
                 </article>
                 {/*<script>*/}
                 {/*    function initMap() {*/}
@@ -155,16 +157,16 @@ const Main = () => {
                 <section className="page-footer__wrapper">
                     <div className="page-footer__item--one"/>
 
-                    <ul className="page-footer__item--two">
-                        <li className="page-footer__item--two--first"/>
-                        <li className="page-footer__item--two--second"/>
-                        <li className="page-footer__item--two--third"/>
-                    </ul>
+                    <div className="page-footer__item--two">
+                        <a  target="_blank" href="https://vk.com/im" className="page-footer__item--two--first"/>
+                        <a  target="_blank"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
+                        <a  target="_blank" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
+                    </div>
 
-                    <div className="page-footer__item--three">
+                    <a rel="noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">
                         <p className="page-footer--text">HTML Academy</p>
                         <div className="page-footer__item--three--sign"/>
-                    </div>
+                    </a>
                 </section>
             </footer>
     </>

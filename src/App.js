@@ -3,7 +3,7 @@ import {BrowserRouter, Route,Switch} from 'react-router-dom'
 
 import Main from "./components/main-page";
 import {Catalog} from "./components/catalog-page";
-
+import Form from "./components/form-page";
 
 function App() {
     return (
@@ -11,8 +11,8 @@ function App() {
         <BrowserRouter>
         <Switch>
         <Route path={'/'} exact component={Main}/>
-            {/*<Route path={'/form'} component={Form}/>*/}
-            {/*<Route path={'/catalog'} component={Catalog}/>*/}
+            <Route path={'/form'} component={Form}/>
+            <Route path={'/catalog'} component={Catalog}/>
     </Switch>
     </BrowserRouter>
 
