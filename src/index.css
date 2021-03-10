@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Rajdhani';
-  src: local('Rajdhani'), url(./fonts/Oswald/Oswald-VariableFont_wght.ttf) format('truetype');
+  font-family: 'Oswald';
+  src: local('Oswald'), url(./fonts/Oswald/Oswald-VariableFont_wght.ttf) format('truetype');
 }
 
 
