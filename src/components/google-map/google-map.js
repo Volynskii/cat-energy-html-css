@@ -29,7 +29,7 @@ export default function MyMap () {
        libraries
     });
 
-    const [markers, setMarkers] = React.useState([]);
+
 
     if (loadError) return "Error loading maps";
     if (!isLoaded) return "Loading Maps"
@@ -38,20 +38,7 @@ export default function MyMap () {
                    zoom={17}
                    center={center}
                    options={options}
-                   // onClick={(event) => {
-                   //     setMarkers((current) => [
-                   //         ...current,
-                   //         {
-                   //             lat: event.latLng.lat(),
-                   //             lng: event.latLng.lng(),
-                   //             time: new Date(),
-                   //         },
-                   //     ]);
-                   // }}
-
-
         >
-            {/*{markers.map(marker => */}
                     <Marker key={1}
                                            position={{lat: center.lat, lng: center.lng}}
                             icon={{
@@ -59,7 +46,6 @@ export default function MyMap () {
                                 scaledSize: new window.google.maps.Size(100,100)
                             }}
                     />
-                                           {/*)}*/}
         </GoogleMap>
     );
 }

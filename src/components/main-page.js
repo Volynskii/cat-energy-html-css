@@ -1,5 +1,6 @@
 import './main-page.scss'
 import MyMap from "./google-map/google-map";
+import {Link} from "react-router-dom";
 
 const Main = () => {
     return (
@@ -13,7 +14,7 @@ const Main = () => {
                             <h1 className="find-programm-content-header">Функциональное питание для котов</h1>
                             <p className="find-programm-content-description">ЗАНЯЛСЯ СОБОЙ?ЗАЙМИСЬ КОТОМ!</p>
 
-                            <a href={`/form`} className="find-programm-content-button">ПОДОБРАТЬ ПРОГРАММУ</a>
+                            <Link to={`/form`} className="find-programm-content-button">ПОДОБРАТЬ ПРОГРАММУ</Link>
 
                         </div>
                     </article>
@@ -21,10 +22,10 @@ const Main = () => {
                     <article className="header-navigation">
                         <div className="find-programm-logotype-tablet"/>
                         <ul className="header-menu">
-                            <li className="header-menu-item"><a className="header-menu-item-active-main" href={`/`}>ГЛАВНАЯ</a>
+                            <li className="header-menu-item"><Link className="header-menu-item-active-main" to={`/`}>ГЛАВНАЯ</Link>
                             </li>
-                            <li className="header-menu-item"><a href={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</a></li>
-                            <li className="header-menu-item"><a href={`/form`}>ПОДБОР ПРОГРАММЫ</a></li>
+                            <li className="header-menu-item"><Link to={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</Link></li>
+                            <li className="header-menu-item"><Link to={`/form`}>ПОДБОР ПРОГРАММЫ</Link></li>
                         </ul>
                     </article>
                 </div>
@@ -138,29 +139,16 @@ const Main = () => {
                 <article id="map">
                     <MyMap />
                 </article>
-                {/*<script>*/}
-                {/*    function initMap() {*/}
-                {/*    // The location of Uluru*/}
-                {/*    var uluru = {lat: 59.938040, lng: 30.323596};*/}
-                {/*    // The map, centered at Uluru*/}
-                {/*    var map = new google.maps.Map(*/}
-                {/*    document.getElementById('map'), {zoom: 17, center: uluru});*/}
-                {/*    // The marker, positioned at Uluru*/}
-                {/*    var marker = new google.maps.Marker({position: uluru, map: map});*/}
-                {/*};*/}
-                {/*</script>*/}
-                {/*<script async defer*/}
-                {/*        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">*/}
-                {/*</script>*/}
+
             </main>
             <footer className="page-footer">
                 <section className="page-footer__wrapper">
                     <div className="page-footer__item--one"/>
 
                     <div className="page-footer__item--two">
-                        <a  target="_blank" href="https://vk.com/im" className="page-footer__item--two--first"/>
-                        <a  target="_blank"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
-                        <a  target="_blank" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
+                        <a   target="_blank" rel="noopener noreferrer" href="https://vk.com/im" className="page-footer__item--two--first"/>
+                        <a  target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
                     </div>
 
                     <a rel="noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">

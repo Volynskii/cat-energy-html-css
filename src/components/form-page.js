@@ -1,5 +1,6 @@
 import './form-page.scss'
 import MyMap from "./google-map/google-map";
+import {Link} from "react-router-dom";
 
 const Form = () => {
     return (
@@ -9,10 +10,10 @@ const Form = () => {
                 <article className="header-navigation-catalog">
                     <div className="find-programm-logotype-tablet-catalog"/>
                     <ul className="header-menu-form">
-                        <li className="header-menu-item-catalog"><a href={`/`}>ГЛАВНАЯ</a>
+                        <li className="header-menu-item-catalog"><Link to={`/`}>ГЛАВНАЯ</Link>
                         </li>
-                        <li className="header-menu-item-catalog"><a href={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</a></li>
-                        <li className="header-menu-item-catalog"><a  className="header-menu-item-active" href={`/form`}>ПОДБОР ПРОГРАММЫ</a> </li>
+                        <li className="header-menu-item-catalog"><Link to={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</Link></li>
+                        <li className="header-menu-item-catalog"><Link to={`/form`}  className="header-menu-item-active">ПОДБОР ПРОГРАММЫ</Link> </li>
                     </ul>
                 </article>
 
@@ -130,23 +131,18 @@ const Form = () => {
                     <MyMap />
                 </article>
 
-                {/*<script src="google-map.js"></script>*/}
-                {/*<script async defer*/}
-                {/*        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">*/}
-                {/*</script>*/}
-
             </main>
             <footer className="page-footer">
                 <section className="page-footer__wrapper">
                     <div className="page-footer__item--one"/>
 
                     <div className="page-footer__item--two">
-                        <a  target="_blank" href="https://vk.com/im" className="page-footer__item--two--first"/>
-                        <a  target="_blank"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
-                        <a  target="_blank" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://vk.com/im" className="page-footer__item--two--first"/>
+                        <a  target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
                     </div>
 
-                    <a rel="noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">
+                    <a rel="noopener noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">
                         <p className="page-footer--text">HTML Academy</p>
                         <div className="page-footer__item--three--sign"/>
                     </a>

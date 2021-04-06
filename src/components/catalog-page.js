@@ -1,6 +1,7 @@
 import './catalog-page.scss'
 import arrayCatalog from "../mocks/catalog-item";
 import MyMap from "./google-map/google-map";
+import {Link} from "react-router-dom";
 
 export const Catalog = () => {
 
@@ -12,10 +13,10 @@ export const Catalog = () => {
                 <article className="header-navigation-catalog">
                     <div className="find-programm-logotype-tablet-catalog"/>
                     <ul className="header-menu-catalog">
-                        <li className="header-menu-item a-color"><a href={`/`}>ГЛАВНАЯ</a>
+                        <li className="header-menu-item a-color"><Link to={`/`}>ГЛАВНАЯ</Link>
                         </li>
-                        <li className="header-menu-item a-color"><a className="header-menu-item-active" href={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</a></li>
-                        <li className="header-menu-item a-color"><a href={`/form`}>ПОДБОР ПРОГРАММЫ</a></li>
+                        <li className="header-menu-item a-color"><Link className="header-menu-item-active" to={`/catalog`}>КАТАЛОГ ПРОДУКЦИИ</Link></li>
+                        <li className="header-menu-item a-color"><Link to={`/form`}>ПОДБОР ПРОГРАММЫ</Link></li>
                     </ul>
                 </article>
             </header>
@@ -162,12 +163,12 @@ export const Catalog = () => {
                     <div className="page-footer__item--one"/>
 
                     <div className="page-footer__item--two">
-                        <a  target="_blank" href="https://vk.com/im" className="page-footer__item--two--first"/>
-                        <a  target="_blank"  href="https://www.instagram.com/" className="page-footer__item--two--second"/>
-                        <a  target="_blank" href="https://www.facebook.com/" className="page-footer__item--two--third"/>
+                        <a target="_blank"  href="https://vk.com/im" rel="noopener noreferrer" className="page-footer__item--two--first"/>
+                        <a target="_blank"  href="https://www.instagram.com/" rel="noopener noreferrer" className="page-footer__item--two--second"/>
+                        <a target="_blank" href="https://www.facebook.com/" rel="noopener noreferrer" className="page-footer__item--two--third"/>
                     </div>
 
-                    <a rel="noreferrer" target="_blank" href="https://htmlacademy.ru/study" className="page-footer__item--three">
+                    <a target="_blank" href="https://htmlacademy.ru/study" rel="noopener noreferrer" className="page-footer__item--three">
                         <p className="page-footer--text">HTML Academy</p>
                         <div className="page-footer__item--three--sign"/>
                     </a>
